@@ -11,6 +11,8 @@ spec:
   imagePullPolicy: IfNotPresent
   mainApplicationFile: https://raw.githubusercontent.com/vipmarwah/pythonprogs/main/prog.py
   sparkVersion: 3.5.0
+  sparkConf:
+    "spark.kubernetes.namespace": "default"
   driver:
     labels:
       version: 3.5.0
