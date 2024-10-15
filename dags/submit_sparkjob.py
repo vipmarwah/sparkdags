@@ -13,7 +13,7 @@ dag = DAG(
 )
 
 submit_spark_app = KubernetesPodOperator(
-    namespace='sparkapplication',
+    namespace='default',
     name="submit-spark-job",
     task_id="submit-spark-app",
     is_delete_operator_pod=True,
