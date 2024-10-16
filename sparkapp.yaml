@@ -2,7 +2,7 @@ apiVersion: sparkoperator.k8s.io/v1beta2
 kind: SparkApplication
 metadata:
   name: spark-pi-python
-  namespace: default
+  namespace: sparkapplication
 spec:
   type: Python
   pythonVersion: "3"
@@ -12,7 +12,7 @@ spec:
   mainApplicationFile: https://raw.githubusercontent.com/vipmarwah/pythonprogs/main/prog.py
   sparkVersion: 3.5.0
   sparkConf:
-    "spark.kubernetes.namespace": "default"
+    "spark.kubernetes.namespace": "sparkapplication"
   driver:
     labels:
       version: 3.5.0
