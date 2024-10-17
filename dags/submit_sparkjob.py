@@ -21,7 +21,7 @@ submit_spark_app = KubernetesPodOperator(
     dag=dag,
     cmds=["kubectl", "apply", "-f", "https://github.com/vipmarwah/sparkdags/sparkapp.yaml"],
     image="bitnami/kubectl:latest",
-    get_logs=True,
+    #get_logs=True,
 )
 
 submit_spark_app
