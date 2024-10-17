@@ -39,4 +39,4 @@ k8s_task = KubernetesPodOperator(
 #     #get_logs=True,
 # )
 
-submit_spark_app
+k8s_task
