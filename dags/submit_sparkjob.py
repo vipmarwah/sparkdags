@@ -17,7 +17,7 @@ submit_spark_app = SparkSubmitOperator(
     application='https://github.com/vipmarwah/sparkdags/sparkapp.yaml',  # Path to your Spark job
     conn_id='airflow-spark', 
     env_vars={
-            'JAVA_HOME': '/opt/java/openjdk',  # Path to your Java installation
+            'JAVA_HOME': '/opt/java/openjdk/lib',  # Path to your Java installation
         },
     dag=dag,
     # namespace='sparkapplication',
